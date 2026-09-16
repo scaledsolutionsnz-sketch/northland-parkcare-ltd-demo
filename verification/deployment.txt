@@ -1,0 +1,49 @@
+{
+  "status": "ok",
+  "deployment": {
+    "id": "dpl_5yAboUk1RdbAvbvb3DRLzEZ5oJ4c",
+    "url": "https://northland-parkcare-ltd-demo-lpotz3j8j-scaled-solutions.vercel.app",
+    "inspectorUrl": "https://vercel.com/scaled-solutions/northland-parkcare-ltd-demo/5yAboUk1RdbAvbvb3DRLzEZ5oJ4c",
+    "readyState": "READY",
+    "target": "production",
+    "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_5yAboUk1RdbAvbvb3DRLzEZ5oJ4c"
+  },
+  "message": "Deployment northland-parkcare-ltd-demo-lpotz3j8j-scaled-solutions.vercel.app ready.",
+  "next": [
+    {
+      "command": "vercel curl https://northland-parkcare-ltd-demo-lpotz3j8j-scaled-solutions.vercel.app",
+      "when": "Verify deployment, including when Deployment Protection is enabled"
+    },
+    {
+      "command": "vercel inspect northland-parkcare-ltd-demo-lpotz3j8j-scaled-solutions.vercel.app",
+      "when": "Inspect deployment"
+    },
+    {
+      "command": "vercel deploy --prod",
+      "when": "Promote to production"
+    }
+  ]
+}
+npm notice run npx
+npm notice run 'vc' deploy --prod --yes
+Vercel CLI 59.19.0 (Node.js 26.7.0)
+Deploying northland-parkcare-ltd-demo
+Uploading [--------------------] (0.0B/5.8MB)
+Uploading [=====---------------] (1.5MB/5.8MB)
+Uploading [==========----------] (2.9MB/5.8MB)
+Uploading [===============-----] (4.3MB/5.8MB)
+Uploading [====================] (5.8MB/5.8MB)
+  Inspect         https://vercel.com/scaled-solutions/northland-parkcare-ltd-demo/5yAboUk1RdbAvbvb3DRLzEZ5oJ4c
+  Production      https://northland-parkcare-ltd-demo-lpotz3j8j-scaled-solutions.vercel.app
+Building…
+Running build in Cleveland, USA (East) – cle1
+Build machine configuration: 4 cores, 8 GB
+Retrieving list of deployment files...
+Previous build caches not available.
+Previous build caches not available.
+Downloading 34 deployment files...
+Running "vercel build"
+Vercel CLI 59.16.0
+[2K[1A[2K[G  Production      https://northland-parkcare-ltd-demo-lpotz3j8j-scaled-solutions.vercel.app
+Completing…
+▲ Aliased         https://northland-parkcare-ltd-demo.vercel.app
