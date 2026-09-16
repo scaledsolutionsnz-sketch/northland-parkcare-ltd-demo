@@ -1,0 +1,47 @@
+{
+  "status": "ok",
+  "deployment": {
+    "id": "dpl_BssJb5uSXh1VcV79fZD21qpSofaT",
+    "url": "https://northland-parkcare-ltd-demo-9wk2bn4g3-scaled-solutions.vercel.app",
+    "inspectorUrl": "https://vercel.com/scaled-solutions/northland-parkcare-ltd-demo/BssJb5uSXh1VcV79fZD21qpSofaT",
+    "readyState": "READY",
+    "target": "production",
+    "deploymentApiUrl": "https://api.vercel.com/v13/deployments/dpl_BssJb5uSXh1VcV79fZD21qpSofaT"
+  },
+  "message": "Deployment northland-parkcare-ltd-demo-9wk2bn4g3-scaled-solutions.vercel.app ready.",
+  "next": [
+    {
+      "command": "vercel curl https://northland-parkcare-ltd-demo-9wk2bn4g3-scaled-solutions.vercel.app",
+      "when": "Verify deployment, including when Deployment Protection is enabled"
+    },
+    {
+      "command": "vercel inspect northland-parkcare-ltd-demo-9wk2bn4g3-scaled-solutions.vercel.app",
+      "when": "Inspect deployment"
+    },
+    {
+      "command": "vercel deploy --prod",
+      "when": "Promote to production"
+    }
+  ]
+}
+npm notice run npx
+npm notice run 'vc' deploy --prod --yes
+Vercel CLI 59.19.0 (Node.js 26.7.0)
+Deploying northland-parkcare-ltd-demo
+Uploading [--------------------] (0.0B/19.8KB)
+Uploading [================----] (16.0KB/19.8KB)
+Uploading [====================] (19.8KB/19.8KB)
+  Inspect         https://vercel.com/scaled-solutions/northland-parkcare-ltd-demo/BssJb5uSXh1VcV79fZD21qpSofaT
+  Production      https://northland-parkcare-ltd-demo-9wk2bn4g3-scaled-solutions.vercel.app
+Building…
+Building…
+Running build in Cleveland, USA (East) – cle1
+Build machine configuration: 4 cores, 8 GB
+Retrieving list of deployment files...
+Previous build caches not available.
+Downloading 34 deployment files...
+[2K[1A[2K[G  Production      https://northland-parkcare-ltd-demo-9wk2bn4g3-scaled-solutions.vercel.app
+Completing…
+▲ Aliased         https://northland-parkcare-ltd-demo.vercel.app
+
+Live CSS verified identical to local source.
