@@ -1,0 +1,416 @@
+[
+  {
+    "width": 375,
+    "data": {
+      "images": [
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 760,
+          "naturalRatio": 1.496,
+          "ratio": "auto 1900 / 1267",
+          "service": false,
+          "src": "img/stock-da991d47f1.jpg",
+          "w": 375
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 760,
+          "naturalRatio": 1.496,
+          "ratio": "auto 1900 / 1267",
+          "service": false,
+          "src": "img/stock-f143aacbdf.jpg",
+          "w": 375
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 760,
+          "naturalRatio": 1.3309608540925266,
+          "ratio": "auto 1900 / 1425",
+          "service": false,
+          "src": "img/stock-7569272d4e.jpg",
+          "w": 375
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 249.75,
+          "naturalRatio": 1.7857142857142858,
+          "ratio": "auto 900 / 506",
+          "service": true,
+          "src": "img/stock-0b38c9a5a5.jpg",
+          "w": 333
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 249.75,
+          "naturalRatio": 1.5,
+          "ratio": "auto 900 / 600",
+          "service": true,
+          "src": "img/stock-65a9e03ca0.jpg",
+          "w": 333
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 249.75,
+          "naturalRatio": 1.5060240963855422,
+          "ratio": "auto 900 / 599",
+          "service": true,
+          "src": "img/stock-266625a168.jpg",
+          "w": 333
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 249.75,
+          "naturalRatio": 1.5,
+          "ratio": "auto 900 / 600",
+          "service": true,
+          "src": "img/stock-64e27d6a0b.jpg",
+          "w": 333
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 249.75,
+          "naturalRatio": 1.447876447876448,
+          "ratio": "auto 900 / 623",
+          "service": true,
+          "src": "img/stock-a1a8c231d1.jpg",
+          "w": 333
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 249.75,
+          "naturalRatio": 1.5,
+          "ratio": "auto 900 / 600",
+          "service": true,
+          "src": "img/stock-51698d35c9.jpg",
+          "w": 333
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 251.25,
+          "naturalRatio": 1.5,
+          "ratio": "4 / 3",
+          "service": false,
+          "src": "img/stock-86100f0e75.jpg",
+          "w": 335
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 251.25,
+          "naturalRatio": 1.7857142857142858,
+          "ratio": "4 / 3",
+          "service": false,
+          "src": "img/stock-0b38c9a5a5.jpg",
+          "w": 335
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 251.25,
+          "naturalRatio": 1.5,
+          "ratio": "4 / 3",
+          "service": false,
+          "src": "img/stock-65a9e03ca0.jpg",
+          "w": 335
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 251.25,
+          "naturalRatio": 1.5060240963855422,
+          "ratio": "4 / 3",
+          "service": false,
+          "src": "img/stock-266625a168.jpg",
+          "w": 335
+        }
+      ],
+      "overflow": false
+    }
+  },
+  {
+    "width": 768,
+    "data": {
+      "images": [
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 1000,
+          "naturalRatio": 1.5,
+          "ratio": "auto 1900 / 1267",
+          "service": false,
+          "src": "img/stock-da991d47f1.jpg",
+          "w": 768
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 1000,
+          "naturalRatio": 1.5,
+          "ratio": "auto 1900 / 1267",
+          "service": false,
+          "src": "img/stock-f143aacbdf.jpg",
+          "w": 768
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 1000,
+          "naturalRatio": 1.3333333333333333,
+          "ratio": "auto 1900 / 1425",
+          "service": false,
+          "src": "img/stock-7569272d4e.jpg",
+          "w": 768
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 261.75,
+          "naturalRatio": 1.7777777777777777,
+          "ratio": "auto 900 / 506",
+          "service": true,
+          "src": "img/stock-0b38c9a5a5.jpg",
+          "w": 349
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 261.75,
+          "naturalRatio": 1.5,
+          "ratio": "auto 900 / 600",
+          "service": true,
+          "src": "img/stock-65a9e03ca0.jpg",
+          "w": 349
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 261.75,
+          "naturalRatio": 1.5058823529411764,
+          "ratio": "auto 900 / 599",
+          "service": true,
+          "src": "img/stock-266625a168.jpg",
+          "w": 349
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 261.75,
+          "naturalRatio": 1.5,
+          "ratio": "auto 900 / 600",
+          "service": true,
+          "src": "img/stock-64e27d6a0b.jpg",
+          "w": 349
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 261.75,
+          "naturalRatio": 1.4490566037735848,
+          "ratio": "auto 900 / 623",
+          "service": true,
+          "src": "img/stock-a1a8c231d1.jpg",
+          "w": 349
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 261.75,
+          "naturalRatio": 1.5,
+          "ratio": "auto 900 / 600",
+          "service": true,
+          "src": "img/stock-51698d35c9.jpg",
+          "w": 349
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 546,
+          "naturalRatio": 1.5,
+          "ratio": "4 / 3",
+          "service": false,
+          "src": "img/stock-86100f0e75.jpg",
+          "w": 728
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 168.984375,
+          "naturalRatio": 1.7777777777777777,
+          "ratio": "4 / 3",
+          "service": false,
+          "src": "img/stock-0b38c9a5a5.jpg",
+          "w": 225.328125
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 168.984375,
+          "naturalRatio": 1.5,
+          "ratio": "4 / 3",
+          "service": false,
+          "src": "img/stock-65a9e03ca0.jpg",
+          "w": 225.328125
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 168.984375,
+          "naturalRatio": 1.5058823529411764,
+          "ratio": "4 / 3",
+          "service": false,
+          "src": "img/stock-266625a168.jpg",
+          "w": 225.328125
+        }
+      ],
+      "overflow": false
+    }
+  },
+  {
+    "width": 1440,
+    "data": {
+      "images": [
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 1000,
+          "naturalRatio": 1.5,
+          "ratio": "auto 1900 / 1267",
+          "service": false,
+          "src": "img/stock-da991d47f1.jpg",
+          "w": 1440
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 1000,
+          "naturalRatio": 1.5,
+          "ratio": "auto 1900 / 1267",
+          "service": false,
+          "src": "img/stock-f143aacbdf.jpg",
+          "w": 1440
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 1000,
+          "naturalRatio": 1.3333333333333333,
+          "ratio": "auto 1900 / 1425",
+          "service": false,
+          "src": "img/stock-7569272d4e.jpg",
+          "w": 1440
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 265.5,
+          "naturalRatio": 1.7821782178217822,
+          "ratio": "auto 900 / 506",
+          "service": true,
+          "src": "img/stock-0b38c9a5a5.jpg",
+          "w": 354
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 265.5,
+          "naturalRatio": 1.5,
+          "ratio": "auto 900 / 600",
+          "service": true,
+          "src": "img/stock-65a9e03ca0.jpg",
+          "w": 354
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 265.5,
+          "naturalRatio": 1.5031315240083507,
+          "ratio": "auto 900 / 599",
+          "service": true,
+          "src": "img/stock-266625a168.jpg",
+          "w": 354
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 265.5,
+          "naturalRatio": 1.5,
+          "ratio": "auto 900 / 600",
+          "service": true,
+          "src": "img/stock-64e27d6a0b.jpg",
+          "w": 354
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 265.5,
+          "naturalRatio": 1.4457831325301205,
+          "ratio": "auto 900 / 623",
+          "service": true,
+          "src": "img/stock-a1a8c231d1.jpg",
+          "w": 354
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 265.5,
+          "naturalRatio": 1.5,
+          "ratio": "auto 900 / 600",
+          "service": true,
+          "src": "img/stock-51698d35c9.jpg",
+          "w": 354
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 389.25,
+          "naturalRatio": 1.5,
+          "ratio": "4 / 3",
+          "service": false,
+          "src": "img/stock-86100f0e75.jpg",
+          "w": 519.015625
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 268.984375,
+          "naturalRatio": 1.7821782178217822,
+          "ratio": "4 / 3",
+          "service": false,
+          "src": "img/stock-0b38c9a5a5.jpg",
+          "w": 358.65625
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 269,
+          "naturalRatio": 1.5,
+          "ratio": "4 / 3",
+          "service": false,
+          "src": "img/stock-65a9e03ca0.jpg",
+          "w": 358.671875
+        },
+        {
+          "distorted": false,
+          "fit": "cover",
+          "h": 268.984375,
+          "naturalRatio": 1.5031315240083507,
+          "ratio": "4 / 3",
+          "service": false,
+          "src": "img/stock-266625a168.jpg",
+          "w": 358.65625
+        }
+      ],
+      "overflow": false
+    }
+  }
+]
