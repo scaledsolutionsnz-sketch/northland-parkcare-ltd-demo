@@ -1,0 +1,32 @@
+[
+  {
+    "width": 375,
+    "page": "index.html",
+    "result": "\"{\\\"overflow\\\":false,\\\"forms\\\":0,\\\"images\\\":[],\\\"h1\\\":{\\\"x\\\":20,\\\"y\\\":165.9375,\\\"width\\\":335,\\\"height\\\":145.75,\\\"top\\\":165.9375,\\\"right\\\":355,\\\"bottom\\\":311.6875,\\\"left\\\":20},\\\"widget\\\":{\\\"x\\\":20,\\\"y\\\":535.25,\\\"width\\\":202.515625,\\\"height\\\":52,\\\"top\\\":535.25,\\\"right\\\":222.515625,\\\"bottom\\\":587.25,\\\"left\\\":20},\\\"buttons\\\":[{\\\"visible\\\":true,\\\"expanded\\\":\\\"false\\\"}]}\""
+  },
+  {
+    "width": 768,
+    "page": "index.html",
+    "result": "\"{\\\"overflow\\\":false,\\\"forms\\\":0,\\\"images\\\":[],\\\"h1\\\":{\\\"x\\\":20,\\\"y\\\":285.25,\\\"width\\\":597.234375,\\\"height\\\":148.359375,\\\"top\\\":285.25,\\\"right\\\":617.234375,\\\"bottom\\\":433.609375,\\\"left\\\":20},\\\"widget\\\":{\\\"x\\\":20,\\\"y\\\":655.046875,\\\"width\\\":202.515625,\\\"height\\\":52,\\\"top\\\":655.046875,\\\"right\\\":222.515625,\\\"bottom\\\":707.046875,\\\"left\\\":20},\\\"buttons\\\":[{\\\"visible\\\":false,\\\"expanded\\\":\\\"false\\\"}]}\""
+  },
+  {
+    "width": 1440,
+    "page": "index.html",
+    "result": "\"{\\\"overflow\\\":false,\\\"forms\\\":0,\\\"images\\\":[],\\\"h1\\\":{\\\"x\\\":160,\\\"y\\\":260.3125,\\\"width\\\":911.140625,\\\"height\\\":226.265625,\\\"top\\\":260.3125,\\\"right\\\":1071.140625,\\\"bottom\\\":486.578125,\\\"left\\\":160},\\\"widget\\\":{\\\"x\\\":160,\\\"y\\\":717.859375,\\\"width\\\":202.515625,\\\"height\\\":52,\\\"top\\\":717.859375,\\\"right\\\":362.515625,\\\"bottom\\\":769.859375,\\\"left\\\":160},\\\"buttons\\\":[{\\\"visible\\\":false,\\\"expanded\\\":\\\"false\\\"}]}\""
+  },
+  {
+    "width": 375,
+    "page": "terms.html",
+    "result": "\"{\\\"overflow\\\":false,\\\"forms\\\":0,\\\"h1\\\":\\\"Terms & Conditions\\\",\\\"broken\\\":[]}\""
+  },
+  {
+    "width": 375,
+    "page": "privacy.html",
+    "result": "\"{\\\"overflow\\\":false,\\\"forms\\\":0,\\\"h1\\\":\\\"Privacy Policy\\\",\\\"broken\\\":[]}\""
+  },
+  {
+    "width": 375,
+    "page": "gallery.html",
+    "result": "\"{\\\"overflow\\\":false,\\\"forms\\\":0,\\\"h1\\\":\\\"Gallery\\\",\\\"broken\\\":[]}\""
+  }
+]

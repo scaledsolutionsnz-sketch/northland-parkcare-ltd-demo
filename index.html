@@ -1,759 +1,206 @@
 <!DOCTYPE html>
+
 <html lang="en-NZ">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>Northland Parkcare Ltd | Landscaping &amp; Grounds Maintenance, Whangārei</title>
-<meta name="description" content="Northland Parkcare Ltd: landscaping, commercial mowing, walking tracks, native planting and playground maintenance across Whangārei and Northland. Established 2002.">
-<meta property="og:title" content="Northland Parkcare Ltd | Landscaping &amp; Grounds Maintenance, Whangārei">
-<meta property="og:description" content="Council-grade grounds care, landscaping, tracks and playground maintenance across Northland since 2002.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://images.unsplash.com/photo-1519331379826-f10be5486c6f?q=80&w=1200&auto=format&fit=crop">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231f3b2a'/%3E%3Cpath d='M16 25c0-7 2-12 9-15-1 8-3 13-9 15zm-1.5-2C9 21 7.5 16.5 7 11c5.5 2.5 7.5 6.5 7.5 12z' fill='%23c99a4b'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;600;700;800&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{
-  --green-950:#14261b;
-  --green-900:#1f3b2a;
-  --green-800:#2a4d37;
-  --green-700:#3a6448;
-  --gold:#c99a4b;
-  --gold-deep:#a97e34;
-  --bone:#f5f2ea;
-  --bone-2:#ede8dc;
-  --ink:#22301f;
-  --ink-soft:#54604f;
-  --line:rgba(31,59,42,.14);
-  --radius:14px;
-  --shadow:0 14px 34px -18px rgba(31,59,42,.35);
-  --ease:cubic-bezier(.16,1,.3,1);
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  font-family:'Hanken Grotesk',sans-serif;
-  color:var(--ink);
-  background:var(--bone);
-  line-height:1.7;
-  font-size:16px;
-  overflow-x:hidden;
-}
-img{max-width:100%;display:block;image-orientation:from-image}
-h1,h2,h3{font-family:'Bitter',serif;line-height:1.15;color:var(--ink)}
-a{color:inherit}
-::selection{background:var(--green-800);color:var(--bone)}
-:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
-
-/* opening animation */
-#intro{
-  position:fixed;inset:0;background:var(--green-950);z-index:200;
-  display:flex;align-items:center;justify-content:center;
-  animation:introOut .9s var(--ease) 1.15s forwards;
-}
-#intro .intro-mark{
-  font-family:'Bitter',serif;font-weight:700;font-size:clamp(1.4rem,4vw,2.2rem);
-  color:var(--bone);letter-spacing:.02em;opacity:0;
-  animation:introIn .7s var(--ease) .15s forwards;
-}
-#intro .intro-mark span{color:var(--gold)}
-@keyframes introIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
-@keyframes introOut{to{opacity:0;visibility:hidden}}
-
-/* nav */
-header{
-  position:fixed;top:0;left:0;right:0;z-index:100;
-  background:rgba(20,38,27,.86);
-  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
-  border-bottom:1px solid rgba(245,242,234,.1);
-}
-.nav-inner{
-  max-width:1160px;margin:0 auto;padding:0 20px;height:68px;
-  display:flex;align-items:center;justify-content:space-between;gap:16px;
-}
-.brand{
-  font-family:'Bitter',serif;font-weight:700;font-size:1.12rem;color:var(--bone);
-  text-decoration:none;letter-spacing:.01em;display:flex;align-items:center;gap:10px;white-space:nowrap;
-}
-.brand svg{flex:none}
-.nav-links{display:flex;align-items:center;gap:26px;list-style:none}
-.nav-links a{
-  color:rgba(245,242,234,.85);text-decoration:none;font-weight:500;font-size:.95rem;
-  transition:color .25s var(--ease);
-}
-.nav-links a:hover{color:var(--gold)}
-.nav-phone{
-  display:inline-flex;align-items:center;gap:8px;height:42px;padding:0 18px;
-  background:var(--gold);color:var(--green-950)!important;border-radius:999px;
-  font-weight:700!important;line-height:1;text-decoration:none;font-size:.92rem!important;
-  transition:transform .25s var(--ease),background .25s var(--ease);
-}
-.nav-phone:hover{background:#d8ac5f;transform:translateY(-1px);color:var(--green-950)!important}
-.nav-toggle{
-  display:none;background:none;border:0;cursor:pointer;padding:10px;min-width:44px;min-height:44px;
-}
-.nav-toggle svg{stroke:var(--bone)}
-.mobile-menu{
-  display:none;background:var(--green-950);border-top:1px solid rgba(245,242,234,.1);
-  padding:10px 20px 22px;
-}
-.mobile-menu a{
-  display:flex;align-items:center;min-height:48px;color:var(--bone);text-decoration:none;
-  font-weight:600;font-size:1.05rem;border-bottom:1px solid rgba(245,242,234,.08);
-}
-.mobile-menu a:last-child{border-bottom:0}
-.mobile-menu .m-call{color:var(--gold)}
-.menu-open .mobile-menu{display:block}
-
-/* hero */
-.hero{
-  position:relative;min-height:100dvh;background:var(--green-950);
-  display:flex;align-items:center;overflow:hidden;
-}
-.hero-slides{position:absolute;inset:0}
-.hero-slide{
-  position:absolute;inset:0;opacity:0;transition:opacity 1.6s ease;
-}
-.hero-slide.active{opacity:1}
-.hero-slide img{
-  width:100%;height:100%;object-fit:cover;
-  filter:saturate(.85) contrast(1.05);
-}
-.hero-overlay{
-  position:absolute;inset:0;
-  background:linear-gradient(180deg,rgba(20,38,27,.72) 0%,rgba(20,38,27,.5) 45%,rgba(20,38,27,.78) 100%);
-}
-.hero-content{
-  position:relative;z-index:2;max-width:1160px;margin:0 auto;padding:120px 20px 72px;width:100%;
-}
-.hero-eyebrow{
-  display:inline-flex;align-items:center;gap:9px;
-  font-size:.82rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--gold);margin-bottom:18px;
-}
-.hero-eyebrow svg{flex:none}
-.hero h1{
-  font-size:clamp(2.4rem,5.6vw,4.1rem);font-weight:800;color:var(--bone);
-  max-width:15ch;margin-bottom:20px;
-}
-.hero-sub{
-  font-size:clamp(1.02rem,1.6vw,1.2rem);color:rgba(245,242,234,.88);
-  max-width:46ch;margin-bottom:32px;
-}
-.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:40px}
-.btn{
-  display:inline-flex;align-items:center;justify-content:center;gap:10px;
-  min-height:52px;padding:0 28px;border-radius:999px;text-decoration:none;
-  font-weight:700;font-size:1rem;line-height:1;cursor:pointer;border:0;
-  transition:transform .25s var(--ease),background .25s var(--ease),box-shadow .25s var(--ease);
-}
-.btn:active{transform:scale(.98)}
-.btn-gold{background:var(--gold);color:var(--green-950)}
-.btn-gold:hover{background:#d8ac5f;transform:translateY(-2px);box-shadow:0 12px 26px -12px rgba(0,0,0,.5)}
-.btn-ghost{
-  background:rgba(245,242,234,.08);color:var(--bone);
-  border:1px solid rgba(245,242,234,.4);
-}
-.btn-ghost:hover{background:rgba(245,242,234,.16);transform:translateY(-2px)}
-.hero-review{
-  max-width:430px;background:rgba(20,38,27,.42);
-  border:1px solid rgba(245,242,234,.22);border-radius:var(--radius);
-  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
-  padding:18px 20px;
-}
-.hero-review .hr-tag{
-  font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
-  color:rgba(245,242,234,.55);margin-bottom:6px;
-}
-.hero-review .stars{color:var(--gold);display:flex;gap:2px;margin-bottom:8px}
-.hero-quote-wrap{position:relative;min-height:74px}
-.hero-quote{
-  position:absolute;inset:0;opacity:0;transition:opacity .8s ease;
-  color:rgba(245,242,234,.92);font-size:.95rem;line-height:1.55;
-}
-.hero-quote.active{opacity:1}
-.hero-quote .hq-name{
-  display:block;margin-top:6px;font-weight:700;font-size:.85rem;color:var(--gold);
-}
-
-/* sections */
-section{padding:96px 0}
-.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
-.sec-head{max-width:640px;margin-bottom:52px}
-.sec-head h2{font-size:clamp(1.9rem,3.6vw,2.7rem);font-weight:700;margin-bottom:14px}
-.sec-head p{color:var(--ink-soft);font-size:1.05rem}
-.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
-.reveal.in{opacity:1;transform:translateY(0)}
-
-/* services */
-#services{background:var(--bone)}
-.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
-.svc-card{
-  background:#fff;border-radius:var(--radius);overflow:hidden;
-  border:1px solid var(--line);box-shadow:var(--shadow);
-  transition:transform .35s var(--ease),box-shadow .35s var(--ease);
-  display:flex;flex-direction:column;
-}
-.svc-card:hover{transform:translateY(-6px);box-shadow:0 24px 44px -20px rgba(31,59,42,.45)}
-.svc-card .svc-img{aspect-ratio:4/3;overflow:hidden}
-.svc-card .svc-img img{
-  width:100%;height:100%;object-fit:cover;
-  filter:saturate(.85) contrast(1.05);
-  transition:transform .6s var(--ease);
-}
-.svc-card:hover .svc-img img{transform:scale(1.05)}
-.svc-body{padding:22px 24px 26px}
-.svc-label{
-  display:inline-flex;align-items:center;gap:8px;
-  font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
-  color:var(--gold-deep);margin-bottom:10px;
-}
-.svc-body h3{font-size:1.28rem;font-weight:700;margin-bottom:8px}
-.svc-body p{color:var(--ink-soft);font-size:.95rem}
-
-/* about */
-#about{background:var(--bone-2)}
-.about-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:56px;align-items:center}
-.about-photo{position:relative}
-.about-photo img{
-  width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:var(--radius);
-  filter:saturate(.85) contrast(1.05);box-shadow:var(--shadow);
-}
-.about-photo .corner-tag{
-  position:absolute;left:18px;bottom:18px;background:var(--green-900);color:var(--bone);
-  border-radius:10px;padding:12px 18px;font-family:'Bitter',serif;font-weight:700;
-  font-size:.95rem;line-height:1.3;box-shadow:0 10px 24px -12px rgba(0,0,0,.5);
-}
-.about-photo .corner-tag em{display:block;font-style:normal;color:var(--gold);font-size:1.35rem}
-.about-copy h2{font-size:clamp(1.9rem,3.4vw,2.6rem);margin-bottom:18px}
-.about-copy p{color:var(--ink-soft);margin-bottom:16px}
-.check-list{list-style:none;margin-top:26px;display:grid;gap:14px}
-.check-list li{display:flex;gap:12px;align-items:flex-start;font-weight:600}
-.check-list svg{flex:none;margin-top:3px;color:var(--gold-deep)}
-
-/* crew */
-#crew{background:var(--bone)}
-.badge{
-  display:inline-block;background:rgba(201,154,75,.16);color:var(--gold-deep);
-  font-size:.78rem;font-weight:700;
-  padding:6px 14px;border-radius:999px;margin-bottom:16px;
-}
-.crew-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
-.crew-card{
-  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
-  padding:34px 26px 30px;text-align:center;box-shadow:var(--shadow);
-  transition:transform .35s var(--ease);
-}
-.crew-card:hover{transform:translateY(-5px)}
-.avatar{
-  width:86px;height:86px;border-radius:50%;margin:0 auto 18px;
-  background:var(--green-900);border:3px solid var(--gold);
-  display:flex;align-items:center;justify-content:center;
-  font-family:'Bitter',serif;font-weight:700;font-size:1.7rem;color:var(--bone);
-}
-.crew-card h3{font-size:1.18rem;margin-bottom:4px}
-.crew-role{color:var(--gold-deep);font-weight:700;font-size:.88rem;margin-bottom:10px}
-.crew-card p{color:var(--ink-soft);font-size:.93rem}
-
-/* reviews */
-#reviews{background:var(--bone-2)}
-.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-bottom:40px}
-.rev-card{
-  background:#fff;border:1px solid var(--line);border-radius:var(--radius);
-  padding:28px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:12px;
-  transition:transform .35s var(--ease);
-}
-.rev-card:hover{transform:translateY(-5px)}
-.rev-card .stars{display:flex;gap:3px;color:var(--gold)}
-.rev-card blockquote{color:var(--ink-soft);font-size:.97rem;flex:1}
-.rev-card .rev-name{font-weight:700;font-size:.92rem}
-.rev-card .rev-name span{display:block;font-weight:500;color:var(--ink-soft);font-size:.82rem}
-.rev-actions{display:flex;justify-content:center}
-.btn-green{background:var(--green-900);color:var(--bone)}
-.btn-green:hover{background:var(--green-800);transform:translateY(-2px)}
-
-/* review banner */
-.rev-banner{
-  background:var(--green-950);padding:72px 0;position:relative;overflow:hidden;
-}
-.rev-banner .wrap{
-  display:flex;align-items:center;justify-content:space-between;gap:28px;flex-wrap:wrap;position:relative;z-index:1;
-}
-.rev-banner h2{color:var(--bone);font-size:clamp(1.5rem,3vw,2.1rem);max-width:22ch}
-.rev-banner p{color:rgba(245,242,234,.7);margin-top:6px;max-width:44ch}
-
-/* contact */
-#contact{background:var(--bone)}
-.contact-card{
-  max-width:1120px;margin:0 auto;background:var(--green-950);border-radius:20px;
-  overflow:hidden;display:grid;grid-template-columns:1fr 1fr;box-shadow:0 30px 60px -30px rgba(20,38,27,.6);
-}
-.contact-map{min-height:100%;position:relative}
-.contact-map iframe{
-  position:absolute;inset:0;width:100%;height:100%;border:0;display:block;
-  filter:saturate(.9);
-}
-.contact-info{padding:48px 44px}
-.contact-info h2{color:var(--bone);font-size:clamp(1.7rem,3vw,2.2rem);margin-bottom:10px}
-.contact-info>p{color:rgba(245,242,234,.75);margin-bottom:26px;font-size:.98rem}
-.contact-btns{display:grid;gap:12px;margin-bottom:30px}
-.contact-btns .btn{width:100%}
-.info-rows{display:grid;gap:16px;margin-bottom:28px}
-.info-row{display:flex;gap:14px;align-items:flex-start;color:rgba(245,242,234,.88);font-size:.95rem}
-.info-row svg{flex:none;color:var(--gold);margin-top:2px}
-.info-row strong{display:block;color:var(--bone);font-size:.85rem;letter-spacing:.04em}
-.info-row a{color:rgba(245,242,234,.88);text-decoration:none}
-.info-row a:hover{color:var(--gold)}
-.social-row{display:flex;gap:12px}
-.social-link{
-  width:46px;height:46px;border-radius:50%;display:flex;align-items:center;justify-content:center;
-  background:rgba(245,242,234,.1);color:var(--bone);transition:background .25s var(--ease),transform .25s var(--ease);
-}
-.social-link:hover{background:var(--gold);color:var(--green-950);transform:translateY(-2px)}
-
-/* footer */
-footer{background:var(--green-950);border-top:1px solid rgba(245,242,234,.08);padding:56px 0 30px}
-.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:44px;margin-bottom:40px}
-.foot-brand{
-  font-family:'Bitter',serif;font-weight:700;font-size:1.2rem;color:var(--bone);
-  display:flex;align-items:center;gap:10px;margin-bottom:14px;
-}
-.foot-grid p{color:rgba(245,242,234,.62);font-size:.92rem;max-width:36ch}
-.foot-grid h3{
-  color:var(--bone);font-family:'Hanken Grotesk',sans-serif;font-size:.85rem;
-  letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px;font-weight:700;
-}
-.foot-grid ul{list-style:none;display:grid;gap:10px}
-.foot-grid ul a{color:rgba(245,242,234,.7);text-decoration:none;font-size:.94rem;transition:color .25s var(--ease)}
-.foot-grid ul a:hover{color:var(--gold)}
-.foot-social{display:flex;gap:10px;margin-top:18px}
-.foot-bottom{
-  border-top:1px solid rgba(245,242,234,.08);padding-top:22px;
-  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
-  color:rgba(245,242,234,.5);font-size:.85rem;
-}
-.foot-bottom a{color:rgba(245,242,234,.6);text-decoration:none}
-.foot-bottom a:hover{color:var(--gold)}
-
-/* responsive */
-@media(max-width:960px){
-  .svc-grid,.crew-grid,.rev-grid{grid-template-columns:repeat(2,1fr)}
-  .about-grid{grid-template-columns:1fr;gap:36px}
-  .contact-card{grid-template-columns:1fr}
-  .contact-map{min-height:340px;order:2}
-  .contact-info{order:1}
-  .foot-grid{grid-template-columns:1fr 1fr}
-}
-@media(max-width:640px){
-  section{padding:72px 0}
-  .nav-links{display:none}
-  .nav-toggle{display:block}
-  .svc-grid,.crew-grid,.rev-grid{grid-template-columns:1fr}
-  .foot-grid{grid-template-columns:1fr}
-  .hero-content{padding:110px 20px 60px}
-  .contact-info{padding:36px 24px}
-  .rev-banner .wrap{flex-direction:column;align-items:flex-start}
-}
-@media(prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
-  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
-  .reveal{opacity:1;transform:none}
-  #intro{display:none}
-}
-</style>
-</head>
+<meta content="Northland Parkcare Ltd: landscaping, commercial mowing, walking tracks, native planting and playground maintenance across Whangārei and Northland. Established 2002." name="description"/>
+<meta content="Northland Parkcare Ltd | Landscaping &amp; Grounds Maintenance, Whangārei" property="og:title"/>
+<meta content="Council-grade grounds care, landscaping, tracks and playground maintenance across Northland since 2002." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://images.unsplash.com/photo-1519331379826-f10be5486c6f?q=80&amp;w=1200&amp;auto=format&amp;fit=crop" property="og:image"/>
+<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231f3b2a'/%3E%3Cpath d='M16 25c0-7 2-12 9-15-1 8-3 13-9 15zm-1.5-2C9 21 7.5 16.5 7 11c5.5 2.5 7.5 6.5 7.5 12z' fill='%23c99a4b'/%3E%3C/svg%3E" rel="icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;600;700;800&amp;family=Hanken+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/></head>
 <body>
-
-<div id="intro" aria-hidden="true"><div class="intro-mark">Northland <span>Parkcare</span></div></div>
-
+<div aria-hidden="true" id="intro"><div class="intro-mark">Northland <span>Parkcare</span></div></div>
 <header id="header">
-  <div class="nav-inner">
-    <a class="brand" href="#top" aria-label="Northland Parkcare Ltd home">
-      <svg width="26" height="26" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#c99a4b"/><path d="M16 25c0-7 2-12 9-15-1 8-3 13-9 15zm-1.5-2C9 21 7.5 16.5 7 11c5.5 2.5 7.5 6.5 7.5 12z" fill="#14261b"/></svg>
+<div class="nav-inner">
+<a aria-label="Northland Parkcare Ltd home" class="brand" href="#top">
+<svg aria-hidden="true" fill="none" height="26" viewBox="0 0 32 32" width="26"><rect fill="#c99a4b" height="32" rx="7" width="32"></rect><path d="M16 25c0-7 2-12 9-15-1 8-3 13-9 15zm-1.5-2C9 21 7.5 16.5 7 11c5.5 2.5 7.5 6.5 7.5 12z" fill="#14261b"></path></svg>
       Northland Parkcare
     </a>
-    <ul class="nav-links">
-      <li><a href="#services">Services</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#crew">Crew</a></li>
-      <li><a href="#reviews">Reviews</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a class="nav-phone" href="tel:+6421588111">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+<ul class="nav-links">
+<li><a href="#services">Services</a></li>
+<li><a href="#about">About</a></li>
+<li></li>
+<li><a href="#reviews">Reviews</a></li>
+<li><a href="#contact">Contact</a></li>
+<li><a class="nav-phone" href="tel:+6421588111">
+<svg aria-hidden="true" fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="15"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
         021 588 111
       </a></li>
-    </ul>
-    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
-      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke="currentColor" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
-    </button>
-  </div>
-  <nav class="mobile-menu" aria-label="Mobile">
-    <a href="#services">Services</a>
-    <a href="#about">About</a>
-    <a href="#crew">Crew</a>
-    <a href="#reviews">Reviews</a>
-    <a href="#contact">Contact</a>
-    <a class="m-call" href="tel:+6421588111">Call 021 588 111</a>
-  </nav>
+</ul>
+<a class="verified-mobile-call" href="tel:+6421588111">Call</a><button aria-expanded="false" aria-label="Open menu" class="nav-toggle" data-menu-button="">
+<svg aria-hidden="true" fill="none" height="26" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewBox="0 0 24 24" width="26"><line x1="3" x2="21" y1="7" y2="7"></line><line x1="3" x2="21" y1="12" y2="12"></line><line x1="3" x2="21" y1="17" y2="17"></line></svg>
+</button>
+</div>
+<nav aria-label="Mobile" class="mobile-menu" data-mobile-menu="">
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+<a class="m-call" href="tel:+6421588111">Call 021 588 111</a>
+</nav>
 </header>
-
 <section class="hero" id="top">
-  <div class="hero-slides" aria-hidden="true">
-    <div class="hero-slide active"><img src="https://images.unsplash.com/photo-1519331379826-f10be5486c6f?q=80&w=1900&auto=format&fit=crop" alt="Tree-lined park avenue with freshly mown grass" fetchpriority="high"></div>
-    <div class="hero-slide"><img src="https://images.unsplash.com/photo-1568480289356-5a75d0fd47fc?q=80&w=1900&auto=format&fit=crop" alt="Sunlight through mature trees over open parkland" loading="lazy"></div>
-    <div class="hero-slide"><img src="https://images.unsplash.com/photo-1476231682828-37e571bc172f?q=80&w=1900&auto=format&fit=crop" alt="Aerial view of a track winding through native forest" loading="lazy"></div>
-  </div>
-  <div class="hero-overlay" aria-hidden="true"></div>
-  <div class="hero-content">
-    <p class="hero-eyebrow">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-      Maungatapere, Whangārei District
-    </p>
-    <h1>Grounds care and landscaping for Northland's parks and properties.</h1>
-    <p class="hero-sub">Commercial mowing, walking tracks, native planting and playground maintenance, done to council standard since 2002.</p>
-    <div class="hero-ctas">
-      <a class="btn btn-gold" href="tel:+6421588111">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+<div aria-hidden="true" class="hero-slides">
+<div class="hero-slide active"><img alt="Tree-lined park avenue with freshly mown grass" decoding="async" fetchpriority="high" height="1267" loading="eager" sizes="100vw" src="img/stock-da991d47f1.jpg" srcset="img/stock-da991d47f1-480.webp 480w, img/stock-da991d47f1-960.webp 960w, img/stock-da991d47f1-1600.webp 1600w, img/stock-da991d47f1.jpg 1900w" width="1900"/></div>
+<div class="hero-slide"><img alt="Sunlight through mature trees over open parkland" decoding="async" fetchpriority="auto" height="1267" loading="lazy" sizes="100vw" src="img/stock-f143aacbdf.jpg" srcset="img/stock-f143aacbdf-480.webp 480w, img/stock-f143aacbdf-960.webp 960w, img/stock-f143aacbdf-1600.webp 1600w, img/stock-f143aacbdf.jpg 1900w" width="1900"/></div>
+<div class="hero-slide"><img alt="Aerial view of a track winding through native forest" decoding="async" fetchpriority="auto" height="1425" loading="lazy" sizes="100vw" src="img/stock-7569272d4e.jpg" srcset="img/stock-7569272d4e-480.webp 480w, img/stock-7569272d4e-960.webp 960w, img/stock-7569272d4e-1600.webp 1600w, img/stock-7569272d4e.jpg 1900w" width="1900"/></div>
+</div>
+<div aria-hidden="true" class="hero-overlay"></div>
+<div class="hero-content">
+<p class="hero-eyebrow">Northland Parkcare Ltd</p>
+<h1>Grounds care and landscaping for Northland's parks and properties.</h1>
+<p class="hero-sub">Commercial mowing, walking tracks, native planting and playground maintenance across Northland.</p>
+<div class="hero-ctas">
+<a class="btn btn-gold" href="tel:+6421588111">
+<svg aria-hidden="true" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="16"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
         Call 021 588 111
       </a>
-      <a class="btn btn-ghost" href="#contact">Get a quote</a>
-    </div>
-    <div class="hero-review" id="heroReview">
-      <p class="hr-tag">Example reviews</p>
-      <div class="stars" aria-label="Five star rating">
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-      </div>
-      <div class="hero-quote-wrap" id="heroQuotes"></div>
-    </div>
-  </div>
-</section>
-
+<a class="btn btn-ghost" href="https://search.google.com/local/writereview?placeid=ChIJpbkQMah4DG0RhoKp0OG4MP8" rel="noopener" target="_blank">Leave a Review</a>
+</div>
+<a class="verified-rating" href="https://search.google.com/local/reviews?placeid=ChIJpbkQMah4DG0RhoKp0OG4MP8" rel="noopener" target="_blank"><span>View our Google profile</span></a>
+</div>
+<button aria-pressed="false" class="slide-control" type="button">Pause slideshow</button></section>
 <section id="services">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <h2>What we look after</h2>
-      <p>From one-off landscaping jobs to year-round council and commercial contracts, the crew covers the full grounds workload.</p>
-    </div>
-    <div class="svc-grid">
-      <article class="svc-card reveal">
-        <div class="svc-img"><img src="https://images.unsplash.com/photo-1558904541-efa843a96f01?q=80&w=900&auto=format&fit=crop" alt="Freshly mown grass cut to an even height" loading="lazy" width="900" height="675"></div>
-        <div class="svc-body">
-          <p class="svc-label"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Scheduled</p>
-          <h3>Commercial mowing</h3>
-          <p>Reserves, sports fields, road frontages and school grounds cut on schedule, with edges trimmed and clippings managed.</p>
-        </div>
-      </article>
-      <article class="svc-card reveal">
-        <div class="svc-img"><img src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?q=80&w=900&auto=format&fit=crop" alt="Garden trowel with fresh soil ready for planting" loading="lazy" width="900" height="675"></div>
-        <div class="svc-body">
-          <p class="svc-label"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V8"/><path d="M5 12H2a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-3"/><path d="M12 8a4 4 0 0 0 4-4V2a4 4 0 0 0-4 4 4 4 0 0 0-4-4v2a4 4 0 0 0 4 4z"/></svg>Design &amp; build</p>
-          <h3>Landscaping</h3>
-          <p>Planting plans, garden builds and finishing work for sections, subdivisions and public spaces across the district.</p>
-        </div>
-      </article>
-      <article class="svc-card reveal">
-        <div class="svc-img"><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=900&auto=format&fit=crop" alt="Walking track winding through tall native bush" loading="lazy" width="900" height="675"></div>
-        <div class="svc-body">
-          <p class="svc-label"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20c4-2 4-6 8-8s8-2 8-8"/><circle cx="4" cy="20" r="1.5"/><circle cx="20" cy="4" r="1.5"/></svg>Specialists</p>
-          <h3>Tracks &amp; walkways</h3>
-          <p>New walking tracks formed, steps and boardwalks built, and existing routes cleared, drained and resurfaced.</p>
-        </div>
-      </article>
-      <article class="svc-card reveal">
-        <div class="svc-img"><img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?q=80&w=900&auto=format&fit=crop" alt="Native seedlings sprouting in planting trays" loading="lazy" width="900" height="675"></div>
-        <div class="svc-body">
-          <p class="svc-label"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>Eco-sourced</p>
-          <h3>Native planting &amp; revegetation</h3>
-          <p>Wetland, gully and reserve planting with eco-sourced natives, released and maintained until they establish.</p>
-        </div>
-      </article>
-      <article class="svc-card reveal">
-        <div class="svc-img"><img src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?q=80&w=900&auto=format&fit=crop" alt="Children playing ball on green grass between trees" loading="lazy" width="900" height="675"></div>
-        <div class="svc-body">
-          <p class="svc-label"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>RPII certified</p>
-          <h3>Playgrounds &amp; play equipment</h3>
-          <p>Installation, repairs and certified operational inspections for councils, schools and early learning centres.</p>
-        </div>
-      </article>
-      <article class="svc-card reveal">
-        <div class="svc-img"><img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?q=80&w=900&auto=format&fit=crop" alt="Open grass paddock with a single mature tree" loading="lazy" width="900" height="675"></div>
-        <div class="svc-body">
-          <p class="svc-label"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Year-round</p>
-          <h3>Section clearing &amp; property maintenance</h3>
-          <p>Overgrown sections opened back up, plus hedges, spraying and ongoing grounds contracts for commercial sites.</p>
-        </div>
-      </article>
-    </div>
-  </div>
+<div class="wrap">
+<div class="sec-head reveal">
+<h2>What we look after</h2>
+<p>From one-off landscaping jobs to year-round council and commercial contracts, the crew covers the full grounds workload.</p>
+</div>
+<div class="svc-grid">
+<article class="svc-card reveal">
+<div class="svc-img"><img alt="Freshly mown grass cut to an even height" decoding="async" height="506" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw" src="img/stock-0b38c9a5a5.jpg" srcset="img/stock-0b38c9a5a5-480.webp 480w, img/stock-0b38c9a5a5.jpg 900w" width="900"/></div>
+<div class="svc-body">
+<p class="svc-label"><svg aria-hidden="true" fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="13"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>Scheduled</p>
+<h3>Commercial mowing</h3>
+<p>Reserves, sports fields, road frontages and school grounds cut on schedule, with edges trimmed and clippings managed.</p>
+</div>
+</article>
+<article class="svc-card reveal">
+<div class="svc-img"><img alt="Garden trowel with fresh soil ready for planting" decoding="async" height="600" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw" src="img/stock-65a9e03ca0.jpg" srcset="img/stock-65a9e03ca0-480.webp 480w, img/stock-65a9e03ca0.jpg 900w" width="900"/></div>
+<div class="svc-body">
+<p class="svc-label"><svg aria-hidden="true" fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="13"><path d="M12 22V8"></path><path d="M5 12H2a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-3"></path><path d="M12 8a4 4 0 0 0 4-4V2a4 4 0 0 0-4 4 4 4 0 0 0-4-4v2a4 4 0 0 0 4 4z"></path></svg>Design &amp; build</p>
+<h3>Landscaping</h3>
+<p>Planting plans, garden builds and finishing work for sections, subdivisions and public spaces across the district.</p>
+</div>
+</article>
+<article class="svc-card reveal">
+<div class="svc-img"><img alt="Walking track winding through tall native bush" decoding="async" height="599" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw" src="img/stock-266625a168.jpg" srcset="img/stock-266625a168-480.webp 480w, img/stock-266625a168.jpg 900w" width="900"/></div>
+<div class="svc-body">
+<p class="svc-label"><svg aria-hidden="true" fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="13"><path d="M4 20c4-2 4-6 8-8s8-2 8-8"></path><circle cx="4" cy="20" r="1.5"></circle><circle cx="20" cy="4" r="1.5"></circle></svg>Specialists</p>
+<h3>Tracks &amp; walkways</h3>
+<p>New walking tracks formed, steps and boardwalks built, and existing routes cleared, drained and resurfaced.</p>
+</div>
+</article>
+<article class="svc-card reveal">
+<div class="svc-img"><img alt="Native seedlings sprouting in planting trays" decoding="async" height="600" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw" src="img/stock-64e27d6a0b.jpg" srcset="img/stock-64e27d6a0b-480.webp 480w, img/stock-64e27d6a0b.jpg 900w" width="900"/></div>
+<div class="svc-body">
+<p class="svc-label"><svg aria-hidden="true" fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="13"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path></svg>Eco-sourced</p>
+<h3>Native planting &amp; revegetation</h3>
+<p>Wetland, gully and reserve planting with eco-sourced natives, released and maintained until they establish.</p>
+</div>
+</article>
+<article class="svc-card reveal">
+<div class="svc-img"><img alt="Children playing ball on green grass between trees" decoding="async" height="623" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw" src="img/stock-a1a8c231d1.jpg" srcset="img/stock-a1a8c231d1-480.webp 480w, img/stock-a1a8c231d1.jpg 900w" width="900"/></div>
+<div class="svc-body">
+<p class="svc-label"><svg aria-hidden="true" fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="13"><path d="M9 12l2 2 4-4"></path><circle cx="12" cy="12" r="10"></circle></svg>RPII certified</p>
+<h3>Playgrounds &amp; play equipment</h3>
+<p>Installation, repairs and certified operational inspections for councils, schools and early learning centres.</p>
+</div>
+</article>
+<article class="svc-card reveal">
+<div class="svc-img"><img alt="Open grass paddock with a single mature tree" decoding="async" height="600" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw" src="img/stock-51698d35c9.jpg" srcset="img/stock-51698d35c9-480.webp 480w, img/stock-51698d35c9.jpg 900w" width="900"/></div>
+<div class="svc-body">
+<p class="svc-label"><svg aria-hidden="true" fill="none" height="13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="13"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>Year-round</p>
+<h3>Section clearing &amp; property maintenance</h3>
+<p>Overgrown sections opened back up, plus hedges, spraying and ongoing grounds contracts for commercial sites.</p>
+</div>
+</article>
+</div>
+</div>
 </section>
-
 <section id="about">
-  <div class="wrap">
-    <div class="about-grid">
-      <div class="about-photo reveal">
-        <img src="https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?q=80&w=1200&auto=format&fit=crop" alt="Morning sun coming through a stand of established trees" loading="lazy" width="1200" height="900">
-        <div class="corner-tag">Established<em>2002</em></div>
-      </div>
-      <div class="about-copy reveal">
-        <h2>Thirty years working Northland ground</h2>
-        <p>Northland Parkcare has looked after parks, reserves and private properties from its Maungatapere base since 2002. The rule on every job is simple: turn up when agreed, do the work properly, leave the site tidy.</p>
-        <p>Behind that sits more than 30 years in the horticultural industry and over 20 years of council-approved contracting, including playground and skatepark maintenance across the Whangārei district. No job is considered too large or too small.</p>
-        <ul class="check-list">
-          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Locally owned and operated since 2002</li>
-          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>Council-approved contractor for over 20 years</li>
-          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>RPII-certified playground operational inspector</li>
-        </ul>
-      </div>
-    </div>
-  </div>
+<div class="wrap">
+<div class="about-grid">
+<div class="about-photo reveal">
+<img alt="Morning sun coming through a stand of established trees" decoding="async" height="800" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw" src="img/stock-86100f0e75.jpg" srcset="img/stock-86100f0e75-480.webp 480w, img/stock-86100f0e75-960.webp 960w, img/stock-86100f0e75.jpg 1200w" width="1200"/>
+<div class="corner-tag">Established<em>2002</em></div>
+</div>
+<div class="about-copy reveal">
+<h2>Care for Northland’s outdoor spaces</h2>
+<p>Northland Parkcare has looked after parks, reserves and private properties from its Whangārei base since 2002. The rule on every job is simple: turn up when agreed, do the work properly, leave the site tidy.</p>
+<p>Our work includes parks, reserves, walking tracks and playground maintenance across the Whangārei district. Contact Paul to discuss your site and the work required.</p>
+<ul class="check-list">
+<li><svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" viewBox="0 0 24 24" width="20"><path d="M20 6L9 17l-5-5"></path></svg>Locally owned and operated since 2002</li>
+<li><svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" viewBox="0 0 24 24" width="20"><path d="M20 6L9 17l-5-5"></path></svg>Parks and grounds contracting</li>
+<li><svg aria-hidden="true" fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" viewBox="0 0 24 24" width="20"><path d="M20 6L9 17l-5-5"></path></svg>Playground maintenance and inspections</li>
+</ul>
+</div>
+</div>
+</div>
 </section>
-
-<section id="crew">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="badge">Example team structure</span>
-      <h2>Who turns up on site</h2>
-      <p>A small crew that has done this work for decades. Roles shown below while full crew profiles are put together.</p>
-    </div>
-    <div class="crew-grid">
-      <article class="crew-card reveal">
-        <div class="avatar" aria-hidden="true">P</div>
-        <h3>Paul</h3>
-        <p class="crew-role">Owner / Operator</p>
-        <p>Runs every contract from quote to final walk-over, with 30 years in the horticultural industry behind him.</p>
-      </article>
-      <article class="crew-card reveal">
-        <div class="avatar" aria-hidden="true">CL</div>
-        <h3>Crew Lead</h3>
-        <p class="crew-role">Mowing &amp; Grounds</p>
-        <p>Keeps the mowing rounds, reserves and commercial sites on schedule through the growing season.</p>
-      </article>
-      <article class="crew-card reveal">
-        <div class="avatar" aria-hidden="true">AT</div>
-        <h3>Assets Technician</h3>
-        <p class="crew-role">Playgrounds &amp; Structures</p>
-        <p>Handles play equipment installs, repairs and the inspection schedule for council and school sites.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section id="reviews">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="badge">Example reviews, shown while the live Google feed is linked</span>
-      <h2>What clients say</h2>
-      <p>Written as examples of the feedback this kind of work earns. The button below goes straight to the real Google listing.</p>
-    </div>
-    <div class="rev-grid">
-      <article class="rev-card reveal">
-        <div class="stars" aria-label="5 out of 5 stars">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-        </div>
-        <blockquote>"The crew cleared our overgrown section and replanted the gully in natives. Tidy work, a fair price, and they came back to check the plants had taken."</blockquote>
-        <p class="rev-name">Mere T.<span>Maungatapere</span></p>
-      </article>
-      <article class="rev-card reveal">
-        <div class="stars" aria-label="5 out of 5 stars">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-        </div>
-        <blockquote>"They mow our commercial frontage every fortnight. The edges are always crisp and I have never had to chase them once."</blockquote>
-        <p class="rev-name">Dave R.<span>Kamo</span></p>
-      </article>
-      <article class="rev-card reveal">
-        <div class="stars" aria-label="5 out of 5 stars">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-        </div>
-        <blockquote>"Had a walking track cut in and boxed steps built on our lifestyle block. Solid work that has handled two Northland winters without a wash-out."</blockquote>
-        <p class="rev-name">Sandra W.<span>Onerahi</span></p>
-      </article>
-    </div>
-    <div class="rev-actions reveal">
-      <a class="btn btn-green" href="https://www.google.com/maps/search/?api=1&query=Northland%20Parkcare%20Ltd%20Maungatapere%20Whang%C4%81rei" target="_blank" rel="noopener">
-        See all our Google reviews
-        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
-      </a>
-    </div>
-  </div>
-</section>
-
+<section class="verified-section verified-gallery" id="gallery"><div class="verified-wrap"><h2>Our services in focus</h2><div class="verified-grid"><figure><img alt="Northland Parkcare Ltd — service illustration" decoding="async" height="506" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw" src="img/stock-0b38c9a5a5.jpg" srcset="img/stock-0b38c9a5a5-480.webp 480w, img/stock-0b38c9a5a5.jpg 900w" width="900"/><figcaption>Illustrative photograph</figcaption></figure><figure><img alt="Northland Parkcare Ltd — service illustration" decoding="async" height="600" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw" src="img/stock-65a9e03ca0.jpg" srcset="img/stock-65a9e03ca0-480.webp 480w, img/stock-65a9e03ca0.jpg 900w" width="900"/><figcaption>Illustrative photograph</figcaption></figure><figure><img alt="Northland Parkcare Ltd — service illustration" decoding="async" height="599" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw" src="img/stock-266625a168.jpg" srcset="img/stock-266625a168-480.webp 480w, img/stock-266625a168.jpg 900w" width="900"/><figcaption>Illustrative photograph</figcaption></figure></div><a class="verified-button" href="gallery.html">Explore the gallery</a></div></section><section class="verified-section" id="reviews"><div class="verified-wrap"><h2>View our Google profile</h2><p>Find our business listing and customer feedback directly on Google. Written reviews and a review count could not be verified for this update.</p><div class="verified-grid"></div><div class="verified-actions"><a class="verified-button primary" href="https://search.google.com/local/writereview?placeid=ChIJpbkQMah4DG0RhoKp0OG4MP8" rel="noopener" target="_blank">Leave a Review</a><a class="verified-button" href="https://search.google.com/local/reviews?placeid=ChIJpbkQMah4DG0RhoKp0OG4MP8" rel="noopener" target="_blank">See all our Google reviews</a></div></div></section>
 <section class="rev-banner" id="leave-review">
-  <div class="wrap">
-    <div>
-      <h2>Happy with our work? Leave us a review.</h2>
-      <p>A quick Google review helps other Northland property owners find a crew they can rely on.</p>
-    </div>
-    <a class="btn btn-gold" href="https://www.google.com/maps/search/?api=1&query=Northland%20Parkcare%20Ltd%20Maungatapere%20Whang%C4%81rei" target="_blank" rel="noopener">Leave a review on Google</a>
-  </div>
+<div class="wrap">
+<div>
+<h2>Happy with our work? Leave us a review.</h2>
+<p>A quick Google review helps other Northland property owners find a crew they can rely on.</p>
+</div>
+<a class="btn btn-gold" href="https://search.google.com/local/writereview?placeid=ChIJpbkQMah4DG0RhoKp0OG4MP8" rel="noopener" target="_blank">Leave a review on Google</a>
+</div>
 </section>
-
 <section id="contact">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <h2>Get in touch</h2>
-      <p>Call or email for a straight answer on your job, whether it is a one-off tidy-up or a year-round contract.</p>
-    </div>
-    <div class="contact-card reveal">
-      <div class="contact-map">
-        <iframe src="https://www.google.com/maps?q=44%20Snooks%20Road%2C%20Maungatapere%2C%20Whangarei%2C%20New%20Zealand&output=embed" loading="lazy" title="Map showing Northland Parkcare Ltd at 44 Snooks Road, Maungatapere" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-      </div>
-      <div class="contact-info">
-        <h2>Talk to Paul</h2>
-        <p>Quotes are free and site visits are easy to arrange around the district.</p>
-        <div class="contact-btns">
-          <a class="btn btn-gold" href="tel:+6421588111">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+<div class="wrap">
+<div class="sec-head reveal">
+<h2>Get in touch</h2>
+<p>Call or email for a straight answer on your job, whether it is a one-off tidy-up or a year-round contract.</p>
+</div>
+<div class="contact-card reveal" style="grid-template-columns:1fr">
+<div class="contact-info">
+<h2>Talk to Paul</h2>
+<p>Quotes are free and site visits are easy to arrange around the district.</p>
+<div class="contact-btns">
+<a class="btn btn-gold" href="tel:+6421588111">
+<svg aria-hidden="true" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="16"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
             Call Northland Parkcare
           </a>
-          <a class="btn btn-ghost" data-gmail data-user="info" data-domain="northlandparkcare.co.nz" data-su="Quote%20request%20from%20the%20website" href="#contact">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+<a class="btn btn-ghost" href="mailto:info@northlandparkcare.co.nz">
+<svg aria-hidden="true" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="16"><rect height="16" rx="2" width="20" x="2" y="4"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
             Email Northland Parkcare
           </a>
-        </div>
-        <div class="info-rows">
-          <div class="info-row">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <div><strong>Phone</strong><a href="tel:+6421588111">021 588 111</a></div>
-          </div>
-          <div class="info-row">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-            <div><strong>Email</strong><a data-gmail data-user="info" data-domain="northlandparkcare.co.nz" href="#contact"><span data-emailtext></span></a></div>
-          </div>
-          <div class="info-row">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-            <div><strong>Location</strong>44 Snooks Road, Maungatapere, Whangārei</div>
-          </div>
-          <div class="info-row">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-            <div><strong>Hours</strong>Monday to Friday, 7:30am to 6:00pm</div>
-          </div>
-        </div>
-        <div class="social-row">
-          <a class="social-link" href="https://www.facebook.com/search/top?q=Northland%20Parkcare%20Ltd" target="_blank" rel="noopener" aria-label="Find Northland Parkcare on Facebook">
-            <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    <div class="foot-grid">
-      <div>
-        <p class="foot-brand">
-          <svg width="24" height="24" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#c99a4b"/><path d="M16 25c0-7 2-12 9-15-1 8-3 13-9 15zm-1.5-2C9 21 7.5 16.5 7 11c5.5 2.5 7.5 6.5 7.5 12z" fill="#14261b"/></svg>
-          Northland Parkcare Ltd
-        </p>
-        <p>Landscaping, mowing, tracks, native planting and playground maintenance across Whangārei and wider Northland since 2002.</p>
-        <div class="foot-social">
-          <a class="social-link" href="https://www.facebook.com/search/top?q=Northland%20Parkcare%20Ltd" target="_blank" rel="noopener" aria-label="Find Northland Parkcare on Facebook">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-          </a>
-        </div>
-      </div>
-      <div>
-        <h3>Site</h3>
-        <ul>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#crew">Crew</a></li>
-          <li><a href="#reviews">Reviews</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3>Contact</h3>
-        <ul>
-          <li><a href="tel:+6421588111">021 588 111</a></li>
-          <li><a data-gmail data-user="info" data-domain="northlandparkcare.co.nz" href="#contact"><span data-emailtext></span></a></li>
-          <li><a href="https://www.google.com/maps/search/?api=1&query=Northland%20Parkcare%20Ltd%20Maungatapere%20Whang%C4%81rei" target="_blank" rel="noopener">Find us on Google Maps</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="foot-bottom">
-      <span>&copy; <span id="year"></span> Northland Parkcare Ltd. All rights reserved.</span>
-      <span><a href="/terms.html">Terms &amp; Conditions</a> &nbsp;|&nbsp; <a href="/privacy.html">Privacy Policy</a></span>
-    </div>
-  </div>
-</footer>
-
-<script>
-(function(){
-  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  // hero slide rotation
-  var slides=document.querySelectorAll('.hero-slide');
-  if(!reduce&&slides.length>1){
-    var s=0;
-    setInterval(function(){
-      slides[s].classList.remove('active');
-      s=(s+1)%slides.length;
-      slides[s].classList.add('active');
-    },6000);
-  }
-
-  // review quotes (example reviews, same set as the cards below)
-  var quotes=[
-    {t:'"Tidy work, a fair price, and they came back to check the plants had taken."',n:'Mere T., Maungatapere'},
-    {t:'"The edges are always crisp and I have never had to chase them once."',n:'Dave R., Kamo'},
-    {t:'"Solid work that has handled two Northland winters without a wash-out."',n:'Sandra W., Onerahi'}
-  ];
-  var qw=document.getElementById('heroQuotes');
-  if(qw){
-    quotes.forEach(function(q,i){
-      var d=document.createElement('p');
-      d.className='hero-quote'+(i===0?' active':'');
-      d.innerHTML=q.t+'<span class="hq-name">'+q.n+'</span>';
-      qw.appendChild(d);
-    });
-    if(!reduce){
-      var qi=0,qs=qw.querySelectorAll('.hero-quote');
-      setInterval(function(){
-        qs[qi].classList.remove('active');
-        qi=(qi+1)%qs.length;
-        qs[qi].classList.add('active');
-      },6000);
-    }
-  }
-
-  // scroll reveals
-  var io=new IntersectionObserver(function(entries){
-    entries.forEach(function(e){
-      if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}
-    });
-  },{threshold:.12});
-  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
-
-  // mobile menu
-  var toggle=document.querySelector('.nav-toggle');
-  var header=document.getElementById('header');
-  toggle.addEventListener('click',function(){
-    var open=header.classList.toggle('menu-open');
-    toggle.setAttribute('aria-expanded',open?'true':'false');
-    toggle.setAttribute('aria-label',open?'Close menu':'Open menu');
-  });
-  document.querySelectorAll('.mobile-menu a').forEach(function(a){
-    a.addEventListener('click',function(){header.classList.remove('menu-open');toggle.setAttribute('aria-expanded','false');});
-  });
-
-  // gmail compose links + visible email text
-  document.querySelectorAll('a[data-gmail]').forEach(function(a){
-    var to=a.getAttribute('data-user')+'@'+a.getAttribute('data-domain');
-    a.href='https://mail.google.com/mail/?view=cm&fs=1&to='+encodeURIComponent(to)+'&su='+(a.getAttribute('data-su')||'')+'&body='+(a.getAttribute('data-body')||'');
-    a.target='_blank';a.rel='noopener';
-    var t=a.querySelector('[data-emailtext]');
-    if(t){t.textContent=to;}
-  });
-
-  document.getElementById('year').textContent=new Date().getFullYear();
-})();
-</script>
-</body>
+</div>
+<div class="info-rows">
+<div class="info-row">
+<svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="18"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+<div><strong>Phone</strong><a href="tel:+6421588111">021 588 111</a></div>
+</div>
+<div class="info-row">
+<svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="18"><rect height="16" rx="2" width="20" x="2" y="4"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+<div><strong>Email</strong><a href="mailto:info@northlandparkcare.co.nz"><span data-emailtext=""></span></a></div>
+</div>
+<div class="info-row">
+<svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="18"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+<div><strong>Location</strong>41 Logyard Road, Port Nikau, Whangārei 0110</div>
+</div>
+<div class="info-row">
+<svg aria-hidden="true" fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="18"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+<div><strong>Hours</strong>Monday to Friday, 7:30am to 6:00pm</div>
+</div>
+</div>
+<div class="social-row">
+<a aria-label="Find Northland Parkcare on Facebook" class="social-link" href="https://www.facebook.com/search/top?q=Northland%20Parkcare%20Ltd" rel="noopener" target="_blank">
+<svg aria-hidden="true" fill="currentColor" height="19" viewBox="0 0 24 24" width="19"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="verified-socials"><a aria-label="Search Facebook for Northland Parkcare Ltd (profile unverified)" href="https://www.facebook.com/search/top?q=Northland%20Parkcare%20Ltd%20%20Whang%C4%81rei%200110" rel="noopener" target="_blank"><svg aria-hidden="true" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.3.2 2.3.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.5 2.9h-2.3v7A10 10 0 0 0 22 12Z"></path></svg></a></div></section>
+<section aria-label="Business location" class="verified-map"><div class="verified-wrap"><iframe allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Northland%20Parkcare%20Ltd%2041%20Logyard%20Road%2C%20Port%20Nikau%2C%20Whang%C4%81rei%200110&amp;output=embed" title="Map of Northland Parkcare Ltd, 41 Logyard Road, Port Nikau, Whangārei 0110"></iframe></div></section><footer class="verified-footer"><div class="verified-wrap"><div><strong>Northland Parkcare Ltd</strong><p>41 Logyard Road, Port Nikau, Whangārei 0110</p><div class="verified-socials"><a aria-label="Search Facebook for Northland Parkcare Ltd (profile unverified)" href="https://www.facebook.com/search/top?q=Northland%20Parkcare%20Ltd%20%20Whang%C4%81rei%200110" rel="noopener" target="_blank"><svg aria-hidden="true" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.3.2 2.3.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.5 2.9h-2.3v7A10 10 0 0 0 22 12Z"></path></svg></a></div></div><div><a href="index.html">Home</a><a href="gallery.html">Gallery</a><a href="/terms.html">Terms &amp; Conditions</a><a href="/privacy.html">Privacy Policy</a><p>© 2026 Northland Parkcare Ltd</p></div></div></footer><script defer="" src="site.js"></script></body>
 </html>
